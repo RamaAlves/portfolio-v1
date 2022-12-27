@@ -1,0 +1,62 @@
+@keyframes changeBg {
+    0%{
+        background:$cornflowerBlue;
+    }    
+    17%{
+        background:$vistaBlue;
+    }        
+    33%{
+        background:$equator;
+    }    
+    50%{
+        background:$salmon;
+    }
+    66%{
+        background:$coralRed;
+    }
+    83%{
+        background:$heliotrope;
+    }
+    100%{
+        background: $royalBlue;
+    }
+}
+
+@keyframes changeColor {
+    0%{
+        color:$cornflowerBlue;
+    }    
+    17%{
+        color:$vistaBlue;
+    }        
+    33%{
+        color:$equator;
+    }    
+    50%{
+        color:$salmon;
+    }
+    66%{
+        color:$coralRed;
+    }
+    83%{
+        color:$heliotrope;
+    }
+    100%{
+        color: $royalBlue;
+    }
+}
+
+@keyframes lines {
+    0%{
+        left:98vw;
+        opacity: 0;
+    }
+    50%{
+        display: inline-block;
+        opacity: 1;
+    }
+    100%{
+        left: 0%;
+        opacity: 0;
+    }
+}

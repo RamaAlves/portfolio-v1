@@ -1,0 +1,92 @@
+@-webkit-keyframes changeBg {
+  0% {
+    background: #5298fa;
+  }
+  17% {
+    background: #7fd4a5;
+  }
+  33% {
+    background: #dfb85a;
+  }
+  50% {
+    background: #fc7f64;
+  }
+  66% {
+    background: #ff4242;
+  }
+  83% {
+    background: #b26df2;
+  }
+  100% {
+    background: #327fea;
+  }
+}
+@keyframes changeBg {
+  0% {
+    background: #5298fa;
+  }
+  17% {
+    background: #7fd4a5;
+  }
+  33% {
+    background: #dfb85a;
+  }
+  50% {
+    background: #fc7f64;
+  }
+  66% {
+    background: #ff4242;
+  }
+  83% {
+    background: #b26df2;
+  }
+  100% {
+    background: #327fea;
+  }
+}
+@-webkit-keyframes changeColor {
+  0% {
+    color: #5298fa;
+  }
+  17% {
+    color: #7fd4a5;
+  }
+  33% {
+    color: #dfb85a;
+  }
+  50% {
+    color: #fc7f64;
+  }
+  66% {
+    color: #ff4242;
+  }
+  83% {
+    color: #b26df2;
+  }
+  100% {
+    color: #327fea;
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: #5298fa;
+  }
+  17% {
+    color: #7fd4a5;
+  }
+  33% {
+    color: #dfb85a;
+  }
+  50% {
+    color: #fc7f64;
+  }
+  66% {
+    color: #ff4242;
+  }
+  83% {
+    color: #b26df2;
+  }
+  100% {
+    color: #327fea;
+  }
+}/*# sourceMappingURL=animations.css.map */

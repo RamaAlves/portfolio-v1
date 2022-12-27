@@ -1,0 +1,86 @@
+.header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(32, 32, 45) 88%, rgb(96, 96, 96) 100%);
+  color: #fff;
+  z-index: 1000;
+}
+.header .nav {
+  display: flex;
+  height: 99%;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav .nav-logo {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 5%;
+}
+.header .nav .nav-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 0 1%;
+  color: #fff;
+  margin-right: 5%;
+}
+.header .nav .nav-list {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  width: 100vw;
+  height: 90vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.header .nav .nav-list .nav-list-item {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header .nav .nav-list .nav-list-item .nav-item-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.header .nav .nav-list .nav-list-item .nav-item-link:hover {
+  color: rgba(34, 34, 34, 0.6);
+  text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.5333333333);
+  transition: all 0.5s ease;
+}
+.header .border {
+  height: 1%;
+  width: 100%;
+  background: #fff;
+}
+.header:hover .border {
+  -webkit-animation: changeBg 7s infinite alternate linear;
+          animation: changeBg 7s infinite alternate linear;
+}
+.header:hover .nav-toggle {
+  -webkit-animation: changeColor 7s infinite alternate linear;
+          animation: changeColor 7s infinite alternate linear;
+}
+
+@media (min-width: 900px) {
+  .header .nav .nav-toggle {
+    display: none;
+  }
+  .header .nav .nav-list {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=header.css.map */

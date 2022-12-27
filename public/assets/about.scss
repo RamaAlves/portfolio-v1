@@ -1,0 +1,66 @@
+.about{
+    padding:15% 10%;
+    padding-bottom:0;
+
+    .cointainer-dynamic-title{
+        
+        .container-title{
+            
+            .title-main{
+                background:$black;
+                animation: changeColor 5s infinite alternate linear;
+                font-size:2.3rem;
+                text-align:center;
+                font-weight:400;
+                border:none;
+                box-shadow: none;
+            }
+        }
+        .container-subtitle-change{
+            height: 1.5rem;
+            display: block;
+            .subtitle-main{
+                display: inline-block;
+                min-height: 1.4rem;
+                width: fit-content;
+                color:#fff;
+                font-size: 1.3rem;
+                .color{
+                    color:$equator;
+                }
+            }
+        }
+    }
+    .container-about_me{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:10%;
+        overflow: auto;
+        padding-bottom:2rem;
+        .photo-profile{
+            object-fit: cover;
+        }
+        .container-description{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            .color{
+                color:$equator;
+            }
+        }
+        .cv{
+            padding:0.735rem;
+            font-size: 1.5rem;
+            border-radius: .375rem;
+            background-color: $lightGrey;
+            animation: changeBg 5s infinite alternate linear;
+            &:hover, &:focus{
+                color:$fontColor;
+                animation: none;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.about {
+  padding: 20% 15%;
+}
+.about .container-title {
+  /* position: relative; */
+  /* background-title{
+      /* animation: changeBg 5s infinite alternate linear; */
+  /*position: absolute;
+      height: 101%;
+      width: 101%;
+      left: 0px;
+      top: 0px;
+      object-fit: cover;
+  } */
+}
+.about .container-title .title-main {
+  /* background:$black; */
+  -webkit-animation: changeColor 5s infinite alternate linear;
+          animation: changeColor 5s infinite alternate linear;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 400;
+  border: none;
+  box-shadow: none;
+  /* filter: none; */
+  /* mix-blend-mode: multiply; */
+}
+.about .subtitle-main {
+  color: #fff;
+  mix-blend-mode: screen;
+  font-size: 1.5rem;
+}
+.about p {
+  overflow: auto;
+}/*# sourceMappingURL=about.css.map */
