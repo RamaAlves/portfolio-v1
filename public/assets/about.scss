@@ -1,6 +1,4 @@
 .about{
-    padding:15% 10%;
-    padding-bottom:0;
 
     .cointainer-dynamic-title{
         
@@ -37,8 +35,11 @@
         width: 100%;
         gap:10%;
         overflow: auto;
-        padding-bottom:2rem;
+        align-items: flex-start;
+        justify-content: space-between;
+
         .photo-profile{
+            max-width: 60vw;
             object-fit: cover;
         }
         .container-description{
@@ -50,11 +51,13 @@
             }
         }
         .cv{
-            padding:0.735rem;
+            align-self: center;
+            padding:0.375rem;
             font-size: 1.5rem;
             border-radius: .375rem;
             background-color: $lightGrey;
             animation: changeBg 5s infinite alternate linear;
+            width:80%;
             &:hover, &:focus{
                 color:$fontColor;
                 animation: none;

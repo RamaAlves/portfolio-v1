@@ -45,6 +45,12 @@ ScrollReveal().reveal('.section', {
     duration:2000,
     reset:true,
 });
+ScrollReveal().reveal('.paragraph', {
+    origin:"left",
+    distance:'100px',
+    duration:2000,
+    reset:true,
+});
 /* ScrollReveal().reveal('.cv', {
     scale:0.5,
     duration:1000,

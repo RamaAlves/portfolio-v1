@@ -116,10 +116,6 @@
     transition: opacity 0.5s ease;
   }
 }
-.about {
-  padding: 15% 10%;
-  padding-bottom: 0;
-}
 .about .cointainer-dynamic-title .container-title .title-main {
   background: #0b0b0b;
   -webkit-animation: changeColor 5s infinite alternate linear;
@@ -152,9 +148,11 @@
   width: 100%;
   gap: 10%;
   overflow: auto;
-  padding-bottom: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .about .container-about_me .photo-profile {
+  max-width: 60vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -167,12 +165,14 @@
   color: #dfb85a;
 }
 .about .container-about_me .cv {
-  padding: 0.735rem;
+  align-self: center;
+  padding: 0.375rem;
   font-size: 1.5rem;
   border-radius: 0.375rem;
   background-color: #606060;
   -webkit-animation: changeBg 5s infinite alternate linear;
           animation: changeBg 5s infinite alternate linear;
+  width: 80%;
 }
 .about .container-about_me .cv:hover, .about .container-about_me .cv:focus {
   color: #dedede;
@@ -365,6 +365,7 @@ html body .container-page .container-section .section {
   align-items: flex-start;
   gap: 5%;
   scroll-snap-align: start;
+  padding: 15% 10%;
   filter: drop-shadow(0px 0px 2px #dedede);
   border-radius: 8px;
   overflow: auto;
