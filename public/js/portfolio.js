@@ -67,3 +67,18 @@ let options = {
 };
 
 let typed = new Typed('#change', options);
+
+//proyects
+
+const namesProyects = document.querySelectorAll(".proyect-name")
+const cardsProyects = document.querySelectorAll(".card-proyect")
+
+namesProyects.forEach((nameProyect, i)=>{
+    namesProyects[i].addEventListener('click', ()=>{
+        let posicion = i;
+        cardsProyects.forEach((cardProyect, i)=>{
+            cardsProyects[i].classList.remove('visible');
+        })
+        cardsProyects[posicion].classList.add('visible');
+    })
+})
