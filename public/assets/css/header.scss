@@ -6,7 +6,7 @@
     left:0;
     background: $black;
     background: $gradientBTW;
-    color:#fff;
+    color:$white;
     z-index: 1000;
 
     .nav{
@@ -28,7 +28,7 @@
             border:none;
             font-size:2rem;
             padding:0 1%;
-            color:#fff;
+            color:$white;
             margin-right: 5%;
             cursor: pointer;
 
@@ -59,7 +59,7 @@
                 width:max-content;
                 
                 .nav-item-link{
-                    color:#fff;
+                    color:$white;
                     text-decoration:none;
                     padding: 8px 12px;
                     border-radius: 4px;
@@ -85,7 +85,7 @@
     .border{
         height: 1%;
         width: 100%;
-        background:#fff;
+        background:$white;
     }
     &:hover {
         .border{

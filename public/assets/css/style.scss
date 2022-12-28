@@ -39,12 +39,12 @@ html{
                 .section, .section-contact{
                     background:$black;
                     opacity: 1;
-                    color:$fontColor;
+                    color:$white;
                     width: 100%;
                     height: 100%;
                     padding:15% 10%;
                     
-                    filter: drop-shadow(0px 0px 2px #dedede);
+                    filter: drop-shadow(0px 0px 2px $white);
                     border-radius: .475rem;
 
                     transition:filter 1s ease;

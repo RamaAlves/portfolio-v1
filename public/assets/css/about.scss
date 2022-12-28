@@ -27,7 +27,7 @@
                 display: inline-block;
                 min-height: 1.4rem;
                 width: fit-content;
-                color:#fff;
+                color:$white;
                 font-size: 1.3rem;
                 .color{
                     color:$equator;
@@ -43,6 +43,7 @@
         overflow: auto;
         align-items: flex-start;
         justify-content: space-between;
+        padding: .375rem;
 
         .photo-profile{
             max-width: 60vw;
@@ -63,13 +64,23 @@
             padding:0.375rem;
             font-size: 1.5rem;
             border-radius: .375rem;
-            background-color: $lightGrey;
-            animation: changeBg 5s infinite alternate linear;
+            background-color: $white;
             width:80%;
-            &:hover, &:focus{
-                color:$fontColor;
-                animation: none;
+            border: none;
+            filter: drop-shadow(0px 0px 1px #dedede);
+            transition: background-color .8s ease-in, color .8s ease-in;
+            a{
                 text-decoration: none;
+                color:$darkGrey;
+            }
+            &:hover, &:focus{
+                background-color:$black;
+                text-decoration: none;
+                filter: drop-shadow(0px 0px 1px $equator);
+                a{
+                    animation: changeColor 5s infinite alternate linear;
+                    
+                }
             }
             
         }

@@ -1,7 +1,8 @@
 .proyects{
     .container-title{
         .title-proyects{
-
+            text-align: center;
+            font-size: 1.5rem;
         }
     }
     .carrousel{
@@ -18,7 +19,7 @@
             width: 100%;
             gap:1rem;
             border-radius: .475rem;
-            filter: drop-shadow(0px 0px 2px #dedede);
+            filter: drop-shadow(0px 0px 2px $white);
             .card-proyect{
                 display: none;
                 width: 100%;
@@ -29,7 +30,7 @@
                 justify-content: center;
                 gap:1.5rem;
                 align-items: center;
-                filter: drop-shadow(0px 0px 2px #dedede);
+                filter: drop-shadow(0px 0px 2px $white);
                 &:hover, &:focus{
                     filter: drop-shadow(0px 0px 2px $equator);
                 }
@@ -49,7 +50,7 @@
                     padding: .735rem;
                     font-size: .8rem;
                     border-radius: .475rem;
-                    filter: drop-shadow(0px 0px 2px #dedede);
+                    filter: drop-shadow(0px 0px 2px $white);
                 }
             }
             .visible{
