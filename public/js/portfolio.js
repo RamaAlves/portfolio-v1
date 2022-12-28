@@ -76,9 +76,13 @@ const cardsProyects = document.querySelectorAll(".card-proyect")
 namesProyects.forEach((nameProyect, i)=>{
     namesProyects[i].addEventListener('click', ()=>{
         let posicion = i;
+        namesProyects.forEach((nameProyect, i)=>{
+            namesProyects[i].classList.remove('seleccionado');
+        })
         cardsProyects.forEach((cardProyect, i)=>{
             cardsProyects[i].classList.remove('visible');
         })
         cardsProyects[posicion].classList.add('visible');
+        namesProyects[posicion].classList.add('seleccionado');
     })
 })

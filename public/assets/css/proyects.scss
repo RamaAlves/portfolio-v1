@@ -71,7 +71,12 @@
         .proyect-name{
             width: 100%;
             line-height: 1.8;
-            
+        }
+        .seleccionado{
+            color:$equator
+        }
+        &:hover, &:focus{
+            cursor: pointer;
         }
     }
 }
