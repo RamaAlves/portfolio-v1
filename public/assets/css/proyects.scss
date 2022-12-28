@@ -1,0 +1,77 @@
+.proyects{
+    .container-title{
+        .title-proyects{
+
+        }
+    }
+    .carrousel{
+        width: 100%;
+        max-width: 120em;
+        background-color: $black;
+        padding:.475rem;
+        /* filter: drop-shadow(0px 0px 2px #dedede); */
+        .container-cards{
+            display: flex;
+            flex-flow:row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            gap:1rem;
+            border-radius: .475rem;
+            filter: drop-shadow(0px 0px 2px #dedede);
+            .card-proyect{
+                display: none;
+                width: 100%;
+                padding: .475rem;
+                border-radius: .475rem;
+                background-color: $black;
+                flex-flow: column nowrap ;
+                justify-content: center;
+                gap:1.5rem;
+                align-items: center;
+                filter: drop-shadow(0px 0px 2px #dedede);
+                &:hover, &:focus{
+                    filter: drop-shadow(0px 0px 2px $equator);
+                }
+                .img-proyect{
+                    opacity: 0;
+                    width: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 16/9;
+                }
+                h4{
+                    height: 2rem;
+                    text-align: center;
+                    opacity: 0;
+                }
+                .btn-info{
+                    opacity: 0;
+                    padding: .735rem;
+                    font-size: .8rem;
+                    border-radius: .475rem;
+                    filter: drop-shadow(0px 0px 2px #dedede);
+                }
+            }
+            .visible{
+                display: flex;
+                .img-proyect, h4, .btn-info{
+                    animation: aparecer 1s ease-in forwards;
+                }
+            }
+        }
+    }
+    .list-proyects{
+        width:100%;
+        padding-top: 1rem;
+        text-align: center;
+        list-style-type: none;
+        overflow: auto;
+        height: 5rem;
+        .proyect-name{
+            width: 100%;
+            line-height: 1.8;
+            
+        }
+    }
+}
+

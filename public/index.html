@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ramiro Alves</title>
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <script defer src="https://kit.fontawesome.com/6d55e5e976.js" crossorigin="anonymous"></script>
         <script defer src="https://unpkg.com/scrollreveal"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -38,7 +38,7 @@
                     <!-- title -->
                     <article class="cointainer-dynamic-title">
                         <div class="container-title">
-                            <h1 class="title-main">Hola! Soy</h1>
+                            <h1 class="title-about">Hola! Soy</h1>
                         </div>
                         <div class="container-subtitle-change">
                             <h2 class="subtitle-main" id="change"></h2>
@@ -66,10 +66,26 @@
             <div class="container-section" id="proyects">
                 <section class="section proyects">
                     <div class="container-title">
-                        <h1 class="title-main">Proyects</h1>    
+                        <h1 class="title-proyects">Mis proyectos</h1>    
                     </div>
-                    <h2 class="subtitle-main">proyectos</h2>
-                    <p>contenedor de proyectos con scroll y que cuando se presione aparezca un modal con el proyecto y detalles</p>
+                    <div class="carrousel">
+                        <div class="container-cards">
+                            <div class="card-proyect visible">
+                                <img src="./assets/images/proyects/BlogBomberosVoluntariosSanMartin.png" alt="imagen proyect 1" class="img-proyect">
+                                <h4>Bomberos Voluntarios San Martin</h4>
+                                <button class="btn-info">More info</button>
+                            </div>
+                            <div class="card-proyect">
+                                <img src="./assets/images/proyects/Saltarina.png" alt="imagen proyect 2" class="img-proyect">
+                                <h4>Saltarina</h4>
+                                <button class="btn-info">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-proyects">
+                        <li class="proyect-name">Blog Informatorio</li>
+                        <li class="proyect-name">Juego PixelLab</li>
+                    </ul>
                 </section>
             </div>
             <div class="container-section" id="tecnologies">
@@ -82,7 +98,7 @@
                 </section>
             </div>
             <div class="container-section" id="contact">
-                <section class="section contact">
+                <section class="section-contact">
                     <div class="container-title">
                         <h1 class="title-main">Contact</h1>    
                     </div>

@@ -1,10 +1,16 @@
 .about{
-
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:5%;
+    scroll-snap-align: start;
+    overflow: auto;
     .cointainer-dynamic-title{
         
         .container-title{
             
-            .title-main{
+            .title-about{
                 background:$black;
                 animation: changeColor 5s infinite alternate linear;
                 font-size:2.3rem;
@@ -33,7 +39,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap:10%;
+        gap:3rem;
         overflow: auto;
         align-items: flex-start;
         justify-content: space-between;
@@ -45,7 +51,9 @@
         .container-description{
             display:flex;
             flex-direction: column;
-            gap:10px;
+            gap:2rem;
+            max-height: 12rem;
+            overflow: auto;
             .color{
                 color:$equator;
             }
