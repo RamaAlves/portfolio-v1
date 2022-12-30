@@ -1,0 +1,8 @@
+.tecnologies .container-tecnologies {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.tecnologies .container-tecnologies .ico-tec {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=tecnologies.css.map */
