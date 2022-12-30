@@ -15,6 +15,7 @@
         border-radius: .475rem;
         overflow: auto;
         transition:box-shadow .3s ease-in;
+        @include barra-scroll(2px,$white,$equator,8px);
         &:focus, &:hover{
             box-shadow: 0px 0px 8px $equator;
         }
@@ -42,6 +43,7 @@
         height: 16rem;
         padding:1rem;
         overflow: auto;
+        @include barra-scroll(2px,$white,$equator,8px);
         .description-tec{
         }
     }

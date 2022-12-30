@@ -68,6 +68,7 @@
         list-style-type: none;
         overflow: auto;
         height: 5rem;
+        @include barra-scroll(2px,$white,$equator,8px);
         .proyect-name{
             width: 100%;
             line-height: 1.8;

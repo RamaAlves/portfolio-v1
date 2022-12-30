@@ -2,6 +2,142 @@
   font-family: azonix;
   src: url(../fonts/azonix/Azonix.otf);
 }
+@-webkit-keyframes changeBg {
+  0% {
+    background: #5298fa;
+  }
+  17% {
+    background: #7fd4a5;
+  }
+  33% {
+    background: #dfb85a;
+  }
+  50% {
+    background: #fc8064;
+  }
+  66% {
+    background: #ff4242;
+  }
+  83% {
+    background: #b26df2;
+  }
+  100% {
+    background: #327fea;
+  }
+}
+@keyframes changeBg {
+  0% {
+    background: #5298fa;
+  }
+  17% {
+    background: #7fd4a5;
+  }
+  33% {
+    background: #dfb85a;
+  }
+  50% {
+    background: #fc8064;
+  }
+  66% {
+    background: #ff4242;
+  }
+  83% {
+    background: #b26df2;
+  }
+  100% {
+    background: #327fea;
+  }
+}
+@-webkit-keyframes changeColor {
+  0% {
+    color: #5298fa;
+  }
+  17% {
+    color: #7fd4a5;
+  }
+  33% {
+    color: #dfb85a;
+  }
+  50% {
+    color: #fc8064;
+  }
+  66% {
+    color: #ff4242;
+  }
+  83% {
+    color: #b26df2;
+  }
+  100% {
+    color: #327fea;
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: #5298fa;
+  }
+  17% {
+    color: #7fd4a5;
+  }
+  33% {
+    color: #dfb85a;
+  }
+  50% {
+    color: #fc8064;
+  }
+  66% {
+    color: #ff4242;
+  }
+  83% {
+    color: #b26df2;
+  }
+  100% {
+    color: #327fea;
+  }
+}
+@-webkit-keyframes lines {
+  0% {
+    left: 98vw;
+    opacity: 0;
+  }
+  50% {
+    display: inline-block;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+  }
+}
+@keyframes lines {
+  0% {
+    left: 98vw;
+    opacity: 0;
+  }
+  50% {
+    display: inline-block;
+    opacity: 1;
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header {
   position: fixed;
   height: 10vh;
@@ -173,6 +309,23 @@
   max-height: 12rem;
   overflow: auto;
 }
+.about .container-about_me .container-description::-webkit-scrollbar {
+  border-radius: 12px;
+  border: 2px solid #dedede;
+}
+.about .container-about_me .container-description::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+.about .container-about_me .container-description::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+.about .container-about_me .container-description::-webkit-scrollbar-track {
+  background: transparent;
+}
+.about .container-about_me .container-description::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #dfb85a;
+}
 .about .container-about_me .container-description .color {
   color: #dfb85a;
 }
@@ -268,6 +421,23 @@
   overflow: auto;
   height: 5rem;
 }
+.proyects .list-proyects::-webkit-scrollbar {
+  border-radius: 12px;
+  border: 2px solid #dedede;
+}
+.proyects .list-proyects::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+.proyects .list-proyects::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+.proyects .list-proyects::-webkit-scrollbar-track {
+  background: transparent;
+}
+.proyects .list-proyects::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #dfb85a;
+}
 .proyects .list-proyects .proyect-name {
   width: 100%;
   line-height: 1.8;
@@ -296,6 +466,23 @@
   overflow: auto;
   transition: box-shadow 0.3s ease-in;
 }
+.tecnologies .slide-tec::-webkit-scrollbar {
+  border-radius: 12px;
+  border: 2px solid #dedede;
+}
+.tecnologies .slide-tec::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+.tecnologies .slide-tec::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+.tecnologies .slide-tec::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tecnologies .slide-tec::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #dfb85a;
+}
 .tecnologies .slide-tec:focus, .tecnologies .slide-tec:hover {
   box-shadow: 0px 0px 8px #dfb85a;
 }
@@ -322,141 +509,22 @@
   padding: 1rem;
   overflow: auto;
 }
-@-webkit-keyframes changeBg {
-  0% {
-    background: #5298fa;
-  }
-  17% {
-    background: #7fd4a5;
-  }
-  33% {
-    background: #dfb85a;
-  }
-  50% {
-    background: #fc8064;
-  }
-  66% {
-    background: #ff4242;
-  }
-  83% {
-    background: #b26df2;
-  }
-  100% {
-    background: #327fea;
-  }
+.tecnologies .container-description-tec::-webkit-scrollbar {
+  border-radius: 12px;
+  border: 2px solid #dedede;
 }
-@keyframes changeBg {
-  0% {
-    background: #5298fa;
-  }
-  17% {
-    background: #7fd4a5;
-  }
-  33% {
-    background: #dfb85a;
-  }
-  50% {
-    background: #fc8064;
-  }
-  66% {
-    background: #ff4242;
-  }
-  83% {
-    background: #b26df2;
-  }
-  100% {
-    background: #327fea;
-  }
+.tecnologies .container-description-tec::-webkit-scrollbar:horizontal {
+  height: 8px;
 }
-@-webkit-keyframes changeColor {
-  0% {
-    color: #5298fa;
-  }
-  17% {
-    color: #7fd4a5;
-  }
-  33% {
-    color: #dfb85a;
-  }
-  50% {
-    color: #fc8064;
-  }
-  66% {
-    color: #ff4242;
-  }
-  83% {
-    color: #b26df2;
-  }
-  100% {
-    color: #327fea;
-  }
+.tecnologies .container-description-tec::-webkit-scrollbar:vertical {
+  width: 8px;
 }
-@keyframes changeColor {
-  0% {
-    color: #5298fa;
-  }
-  17% {
-    color: #7fd4a5;
-  }
-  33% {
-    color: #dfb85a;
-  }
-  50% {
-    color: #fc8064;
-  }
-  66% {
-    color: #ff4242;
-  }
-  83% {
-    color: #b26df2;
-  }
-  100% {
-    color: #327fea;
-  }
+.tecnologies .container-description-tec::-webkit-scrollbar-track {
+  background: transparent;
 }
-@-webkit-keyframes lines {
-  0% {
-    left: 98vw;
-    opacity: 0;
-  }
-  50% {
-    display: inline-block;
-    opacity: 1;
-  }
-  100% {
-    left: 0%;
-    opacity: 0;
-  }
-}
-@keyframes lines {
-  0% {
-    left: 98vw;
-    opacity: 0;
-  }
-  50% {
-    display: inline-block;
-    opacity: 1;
-  }
-  100% {
-    left: 0%;
-    opacity: 0;
-  }
-}
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.tecnologies .container-description-tec::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background-color: #dfb85a;
 }
 * {
   box-sizing: border-box;
@@ -499,7 +567,7 @@ html body .container-page {
   justify-content: space-between;
   align-items: center;
   mix-blend-mode: screen;
-  overflow-y: scroll;
+  overflow-y: auto;
   min-height: 100%;
   padding-bottom: 4rem;
 }
