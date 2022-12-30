@@ -70,6 +70,7 @@
         height: 5rem;
         @include barra-scroll(2px,$white,$equator,8px);
         .proyect-name{
+            transition: color .2s ease-in;
             width: 100%;
             line-height: 1.8;
         }

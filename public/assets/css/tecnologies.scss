@@ -24,12 +24,22 @@
             flex-flow:row nowrap;
             height: 60px;
             width: 280%;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-around;
+            align-items: flex-start;
+            cursor: pointer;
             .btn-tec{
+                cursor: pointer;
                 background-color: transparent;
                 border: none;
+                transition: filter .2s ease-in;
+                &:hover{
+                    filter:drop-shadow(0px 0px 4px $white) brightness(80%);
+                }
+                &:focus{
+                    filter: drop-shadow(0px 0px 4px $equator)
+                }
                 .ico-tec{
+                    cursor: pointer;
                     width: 50px;
                     height: 50px;
                     filter: drop-shadow(0px 0px 1px $white);
@@ -45,6 +55,12 @@
         overflow: auto;
         @include barra-scroll(2px,$white,$equator,8px);
         .description-tec{
+            display: none;
+            opacity: 0;
+        }
+        .visible{
+            display: block;
+            animation: aparecer 1s ease-in forwards;
         }
     }
 }

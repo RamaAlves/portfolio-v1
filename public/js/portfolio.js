@@ -1,7 +1,70 @@
+// Constants
+
 const navToggle=document.querySelector(".nav-toggle")
 const navList=document.querySelector(".nav-list")
 const anchors=document.querySelectorAll(".nav-item-link")
 const subtitle=document.querySelector(".subtitle-main")
+
+
+//proyects
+const namesProyects = document.querySelectorAll(".proyect-name")
+const cardsProyects = document.querySelectorAll(".card-proyect")
+
+//tecnologies
+const descriptionsTecnologies = document.querySelectorAll(".description-tec") 
+const descriptionHtml= document.querySelector("#tec-html")
+const buttonHtml= document.querySelector("#btn-tec-html")
+const descriptionCss= document.querySelector("#tec-css")
+const buttonCss= document.querySelector("#btn-tec-css")
+const descriptionSass= document.querySelector("#tec-sass")
+const buttonSass= document.querySelector("#btn-tec-sass")
+const descriptionJs= document.querySelector("#tec-js")
+const buttonJs= document.querySelector("#btn-tec-js")
+const descriptionPython= document.querySelector("#tec-python")
+const buttonPython= document.querySelector("#btn-tec-python")
+const descriptionDjango= document.querySelector("#tec-django")
+const buttonDjango= document.querySelector("#btn-tec-django")
+const descriptionMysql= document.querySelector("#tec-mysql")
+const buttonMysql= document.querySelector("#btn-tec-mysql")
+const descriptionGit= document.querySelector("#tec-git")
+const buttonGit= document.querySelector("#btn-tec-git")
+const descriptionGithub= document.querySelector("#tec-github")
+const buttonGithub= document.querySelector("#btn-tec-github")
+
+
+// Variables
+
+let conjuntoTec=[
+    [buttonHtml,
+    descriptionHtml],
+    [buttonCss,
+    descriptionCss],
+    [buttonSass,
+    descriptionSass],
+    [buttonJs,
+    descriptionJs],
+    [buttonPython,
+    descriptionPython],
+    [buttonDjango,
+    descriptionDjango],
+    [buttonMysql,
+    descriptionMysql],
+    [buttonGit,
+    descriptionGit],
+    [buttonGithub,
+    descriptionGithub],
+]
+
+//funciones generales
+
+//recibe un HTMLCollection y la clase que se desea eliminar de los elementos en forma de string
+function cleanClass(elementos, clase ){
+    elementos.forEach((elemento, i)=>{
+        elementos[i].classList.remove(clase);
+    })
+}
+
+//navbar
 
 navToggle.addEventListener("click", ()=>{
     navBtnToggle();
@@ -33,6 +96,7 @@ function anchorToglle(anchor){
     anchor.classList.toggle("nav-item-link_active")
 }
 
+//animations page
 ScrollReveal().reveal('.nav', {
     origin:"top",
     duration:1000,
@@ -58,6 +122,9 @@ ScrollReveal().reveal('.paragraph', {
 }); */
 
 
+//About me
+
+//animation text
 let options = {
   strings: ['Ramiro <span class="color">Alves<span/> ', 'web <span class="color">developer<span/> '],
   typeSpeed: 40,
@@ -70,19 +137,34 @@ let typed = new Typed('#change', options);
 
 //proyects
 
-const namesProyects = document.querySelectorAll(".proyect-name")
-const cardsProyects = document.querySelectorAll(".card-proyect")
-
 namesProyects.forEach((nameProyect, i)=>{
     namesProyects[i].addEventListener('click', ()=>{
         let posicion = i;
-        namesProyects.forEach((nameProyect, i)=>{
+        cleanClass(namesProyects, "seleccionado")
+        cleanClass(cardsProyects, "visible")
+/*         namesProyects.forEach((nameProyect, i)=>{
             namesProyects[i].classList.remove('seleccionado');
-        })
-        cardsProyects.forEach((cardProyect, i)=>{
+        }) */
+/*         cardsProyects.forEach((cardProyect, i)=>{
             cardsProyects[i].classList.remove('visible');
-        })
+        }) */
         cardsProyects[posicion].classList.add('visible');
         namesProyects[posicion].classList.add('seleccionado');
     })
 })
+
+// tecnologies
+//recibe un array con arrays de pares boton y parrafo a mostrar)
+function showInfoTec(array){
+    array.forEach((conjunto)=>{
+        console.log(conjunto)
+        console.log(conjunto[0])
+        conjunto[0].addEventListener('click', ()=>{
+            console.log(conjunto[0], conjunto[1])
+            cleanClass(descriptionsTecnologies, 'visible')
+            conjunto[1].classList.add('visible')
+        })
+    })
+}
+
+showInfoTec(conjuntoTec);
