@@ -1,8 +1,10 @@
 @import "variables";
+@import "animations";
+@import "mixins";
 @import "header";
 @import "about";
 @import "proyects";
-@import "animations";
+@import "tecnologies";
 
 *{
     box-sizing: border-box;
@@ -20,13 +22,14 @@ html{
         font-family: azonix ,sans-serif;
         background:$black;
         
+        
         .container-page{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             mix-blend-mode: screen;
-            overflow-y:scroll;
+            overflow-y:auto;
             min-height: 100%;
             padding-bottom: 4rem;
             
@@ -35,7 +38,7 @@ html{
                 width: 80vw;
                 padding-top:15vh;
                 scroll-snap-align: start;
-
+                
                 .section, .section-contact{
                     background:$black;
                     opacity: 1;

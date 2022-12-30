@@ -44,7 +44,7 @@
         align-items: flex-start;
         justify-content: space-between;
         padding: .375rem;
-
+        
         .photo-profile{
             max-width: 60vw;
             object-fit: cover;
@@ -55,6 +55,7 @@
             gap:2rem;
             max-height: 12rem;
             overflow: auto;
+            @include barra-scroll(2px,$white,$equator,8px);
             .color{
                 color:$equator;
             }
@@ -64,7 +65,7 @@
             text-align: center;
             align-self: center;
             padding:0.375rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
             border-radius: .375rem;
             background-color: $white;
             width:80%;

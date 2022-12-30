@@ -1,0 +1,66 @@
+.tecnologies{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:2rem;
+    .container-title{
+        .title-tec{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .slide-tec{
+        width: 100%;
+        padding:1rem .5rem;
+        box-shadow: 0px 0px 8px $white;
+        border-radius: .475rem;
+        overflow: auto;
+        transition:box-shadow .3s ease-in;
+        @include barra-scroll(2px,$white,$equator,8px);
+        &:focus, &:hover{
+            box-shadow: 0px 0px 8px $equator;
+        }
+        .container-tecnologies{
+            display:flex;
+            flex-flow:row nowrap;
+            height: 60px;
+            width: 280%;
+            justify-content: space-around;
+            align-items: flex-start;
+            cursor: pointer;
+            .btn-tec{
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                transition: filter .2s ease-in;
+                &:hover{
+                    filter:drop-shadow(0px 0px 4px $white) brightness(80%);
+                }
+                &:focus{
+                    filter: drop-shadow(0px 0px 4px $equator)
+                }
+                .ico-tec{
+                    cursor: pointer;
+                    width: 50px;
+                    height: 50px;
+                    filter: drop-shadow(0px 0px 1px $white);
+                }
+
+            }
+        }
+    }
+    .container-description-tec{
+        width: 100%;
+        height: 16rem;
+        padding:1rem;
+        overflow: auto;
+        @include barra-scroll(2px,$white,$equator,8px);
+        .description-tec{
+            display: none;
+            opacity: 0;
+        }
+        .visible{
+            display: block;
+            animation: aparecer 1s ease-in forwards;
+        }
+    }
+}

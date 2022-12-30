@@ -1,0 +1,22 @@
+//mixins
+//barra scroll
+@mixin barra-scroll($border-width,$border-color,$scroll-color,$size){
+    &::-webkit-scrollbar{
+        border-radius: 12px;
+        border: $border-width solid $border-color;
+        &:horizontal{
+            height: $size;
+        }
+        &:vertical{
+            width: $size;
+        }
+    }
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 12px;
+        background-color: $scroll-color;
+    }
+
+}
