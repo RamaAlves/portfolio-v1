@@ -69,3 +69,30 @@
         opacity: 1;
     }
 }
+
+@keyframes desaparecer {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes agrandar {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 8rem;
+    }
+}
+
+@keyframes achicar {
+    0%{
+        height: 8rem;
+    }
+    100%{
+        height: 0;
+    }
+}

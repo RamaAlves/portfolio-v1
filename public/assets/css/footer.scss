@@ -1,6 +1,7 @@
 .footer{
     /* height: 10vh; */
     width: 100%;
+    padding-bottom: 1rem;
     .container-section{
         color:$white;
         .section-contact{
@@ -42,6 +43,34 @@
                             color:$lightGrey;
                         }
                     }
+                }
+            }
+            .librerias{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .btn-lib{
+                    border: none;
+                    background-color: transparent;
+                    color:$lightGrey;
+                    padding:1rem;
+                }
+                .container-librerias{
+                    padding: 1rem;
+                    animation: desaparecer .5s ease-in forwards, achicar 1s ease-in forwards;
+                    p{
+                        padding: .375rem;
+                        a{
+                            text-decoration: none;
+                            color: $lightGrey;
+                            cursor:pointer;
+                        }
+                        color: $lightGrey
+                    }
+                }
+                .expanded{
+                    animation: aparecer 1s ease-in forwards, agrandar .5s ease forwards;
                 }
             }
             .copyright{

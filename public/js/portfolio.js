@@ -1,37 +1,39 @@
 // Constants
 
-const navToggle=document.querySelector(".nav-toggle")
-const navList=document.querySelector(".nav-list")
-const anchors=document.querySelectorAll(".nav-item-link")
-const subtitle=document.querySelector(".subtitle-main")
+const navToggle=document.querySelector(".nav-toggle");
+const navList=document.querySelector(".nav-list");
+const anchors=document.querySelectorAll(".nav-item-link");
+const subtitle=document.querySelector(".subtitle-main");
 
 
 //proyects
-const namesProyects = document.querySelectorAll(".proyect-name")
-const cardsProyects = document.querySelectorAll(".card-proyect")
+const namesProyects = document.querySelectorAll(".proyect-name");
+const cardsProyects = document.querySelectorAll(".card-proyect");
 
 //tecnologies
-const descriptionsTecnologies = document.querySelectorAll(".description-tec") 
-const descriptionHtml= document.querySelector("#tec-html")
-const buttonHtml= document.querySelector("#btn-tec-html")
-const descriptionCss= document.querySelector("#tec-css")
-const buttonCss= document.querySelector("#btn-tec-css")
-const descriptionSass= document.querySelector("#tec-sass")
-const buttonSass= document.querySelector("#btn-tec-sass")
-const descriptionJs= document.querySelector("#tec-js")
-const buttonJs= document.querySelector("#btn-tec-js")
-const descriptionPython= document.querySelector("#tec-python")
-const buttonPython= document.querySelector("#btn-tec-python")
-const descriptionDjango= document.querySelector("#tec-django")
-const buttonDjango= document.querySelector("#btn-tec-django")
-const descriptionMysql= document.querySelector("#tec-mysql")
-const buttonMysql= document.querySelector("#btn-tec-mysql")
-const descriptionGit= document.querySelector("#tec-git")
-const buttonGit= document.querySelector("#btn-tec-git")
-const descriptionGithub= document.querySelector("#tec-github")
-const buttonGithub= document.querySelector("#btn-tec-github")
+const descriptionsTecnologies = document.querySelectorAll(".description-tec"); 
+const descriptionHtml= document.querySelector("#tec-html");
+const buttonHtml= document.querySelector("#btn-tec-html");
+const descriptionCss= document.querySelector("#tec-css");
+const buttonCss= document.querySelector("#btn-tec-css");
+const descriptionSass= document.querySelector("#tec-sass");
+const buttonSass= document.querySelector("#btn-tec-sass");
+const descriptionJs= document.querySelector("#tec-js");
+const buttonJs= document.querySelector("#btn-tec-js");
+const descriptionPython= document.querySelector("#tec-python");
+const buttonPython= document.querySelector("#btn-tec-python");
+const descriptionDjango= document.querySelector("#tec-django");
+const buttonDjango= document.querySelector("#btn-tec-django");
+const descriptionMysql= document.querySelector("#tec-mysql");
+const buttonMysql= document.querySelector("#btn-tec-mysql");
+const descriptionGit= document.querySelector("#tec-git");
+const buttonGit= document.querySelector("#btn-tec-git");
+const descriptionGithub= document.querySelector("#tec-github");
+const buttonGithub= document.querySelector("#btn-tec-github");
 
-
+//Footer
+const btnLib = document.querySelector("#btn-lib");
+const containerLib = document.querySelector("#container-lib");
 // Variables
 
 let conjuntoTec=[
@@ -53,7 +55,7 @@ let conjuntoTec=[
     descriptionGit],
     [buttonGithub,
     descriptionGithub],
-]
+];
 
 //funciones generales
 
@@ -159,3 +161,13 @@ function showInfoTec(array){
 }
 
 showInfoTec(conjuntoTec);
+
+// footer
+btnLib.addEventListener('click', ()=>{
+    containerLib.classList.toggle("expanded");
+    if (btnLib.textContent.includes("▲")){
+        btnLib.innerHTML = "librerias ▼"
+    } else {
+        btnLib.innerHTML = "librerias ▲"
+    }
+})
