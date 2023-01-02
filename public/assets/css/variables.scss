@@ -13,8 +13,8 @@ $border:#fee6ae;
 $white:#dedede; 
 
 //gradients
-$gradientBTW:linear-gradient(0deg, $black 0%, rgba(32,32,45,1) 88%, rgba(96,96,96,1) 100%);
-
+$gradientBTW:linear-gradient(0deg, $black 0%, #20202d 88%, #606060 100%);
+$gradientYFooter:linear-gradient(0deg, rgba(223,184,90,1) 0%, rgba(240,186,58,1) 88%, rgba(210,172,80,1) 100%);
 //fonts
 @font-face {
     font-family: azonix;
