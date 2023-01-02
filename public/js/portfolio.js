@@ -140,14 +140,8 @@ let typed = new Typed('#change', options);
 namesProyects.forEach((nameProyect, i)=>{
     namesProyects[i].addEventListener('click', ()=>{
         let posicion = i;
-        cleanClass(namesProyects, "seleccionado")
-        cleanClass(cardsProyects, "visible")
-/*         namesProyects.forEach((nameProyect, i)=>{
-            namesProyects[i].classList.remove('seleccionado');
-        }) */
-/*         cardsProyects.forEach((cardProyect, i)=>{
-            cardsProyects[i].classList.remove('visible');
-        }) */
+        cleanClass(namesProyects, "seleccionado");
+        cleanClass(cardsProyects, "visible");
         cardsProyects[posicion].classList.add('visible');
         namesProyects[posicion].classList.add('seleccionado');
     })
@@ -157,12 +151,9 @@ namesProyects.forEach((nameProyect, i)=>{
 //recibe un array con arrays de pares boton y parrafo a mostrar)
 function showInfoTec(array){
     array.forEach((conjunto)=>{
-        console.log(conjunto)
-        console.log(conjunto[0])
         conjunto[0].addEventListener('click', ()=>{
-            console.log(conjunto[0], conjunto[1])
-            cleanClass(descriptionsTecnologies, 'visible')
-            conjunto[1].classList.add('visible')
+            cleanClass(descriptionsTecnologies, 'visible');
+            conjunto[1].classList.add('visible');
         })
     })
 }

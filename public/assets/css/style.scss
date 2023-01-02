@@ -2,6 +2,7 @@
 @import "animations";
 @import "mixins";
 @import "header";
+@import "footer";
 @import "about";
 @import "proyects";
 @import "tecnologies";
@@ -39,7 +40,7 @@ html{
                 padding-top:15vh;
                 scroll-snap-align: start;
                 
-                .section, .section-contact{
+                .section {
                     background:$black;
                     opacity: 1;
                     color:$white;
