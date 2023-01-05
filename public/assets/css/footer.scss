@@ -91,15 +91,6 @@
         .container-section{
             // color:$white;
             .section-contact{
-                .container-title{
-                    .title-main{
-                        // padding:1rem;
-                        // background: $equator;
-                        // background: $gradientYFooter;
-                        // color:$black;
-                        // filter: drop-shadow(0px 0px 2px $white);
-                    }
-                }
                 .container-enlaces{
                     // background: $black;
                     // background: $gradientBTW;
@@ -116,7 +107,6 @@
                             // list-style: none;
                             // color:$white;
                             a{
-                                
                                 // text-decoration: none;
                                 // color:$white;
                                 text-align: center;
@@ -127,9 +117,6 @@
                                 }
                                 p{
                                     display: block;
-                                }
-                                &:hover, &:focus{
-                                    // color:$lightGrey;
                                 }
                             }
                         }
@@ -151,23 +138,6 @@
                         font-size: 1.2rem;
                         // padding: 1rem;
                         // animation: desaparecer .5s ease-in forwards, achicar 1s ease-in forwards;
-                        p{
-                            // padding: .375rem;
-                            a{
-                                // text-decoration: none;
-                                // color: $lightGrey;
-                                // cursor:pointer;
-                            }
-                            // color: $lightGrey
-                        }
-                    }
-                    .expanded{
-                        // animation: aparecer 1s ease-in forwards, agrandar .5s ease forwards;
-                    }
-                }
-                .copyright{
-                    p{
-                        // text-align: center;
                     }
                 }
             }
