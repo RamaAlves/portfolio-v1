@@ -128,7 +128,7 @@ ScrollReveal().reveal('.paragraph', {
 
 //animation text
 let options = {
-  strings: ['Ramiro <span class="color">Alves<span/> ', 'web <span class="color">developer<span/> '],
+  strings: ['Ramiro <span class="color">Alves<span/> ', 'FRONT-END <span class="color">developer<span/> '],
   typeSpeed: 40,
   backSpeed: 40,
   loop:true,
