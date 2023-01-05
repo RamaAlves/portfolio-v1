@@ -81,6 +81,19 @@ html{
     }
 }
 
-
-
+@media (min-width:992px){
+    
+    html{
+        body{
+            .container-page{
+                .container-section{
+                    width: 90vw;
+                    .section {
+                        padding:3%;
+                    }
+                }
+            }
+        }
+    }
+}
 
