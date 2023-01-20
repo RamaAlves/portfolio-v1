@@ -1,5 +1,6 @@
 //colors
 $black:#0b0b0b;
+$backgroundTransparent: #000000e7; 
 $darkGrey:#1a1919;
 $lightGrey: #606060;
 $cornflowerBlue:#5298fa;
@@ -15,6 +16,7 @@ $white:#dedede;
 //gradients
 $gradientBTW:linear-gradient(0deg, $black 0%, #20202d 88%, #606060 100%);
 $gradientYFooter:linear-gradient(0deg, rgba(223,184,90,1) 0%, rgba(240,186,58,1) 88%, rgba(210,172,80,1) 100%);
+
 //fonts
 @font-face {
     font-family: azonix;
