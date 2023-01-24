@@ -9,53 +9,64 @@ const subtitle=document.querySelector(".subtitle-main");
 //proyects
 const namesProyects = document.querySelectorAll(".proyect-name");
 const cardsProyects = document.querySelectorAll(".card-proyect");
+const btnInfoBlog = document.querySelector("#info-blog");
+const btnInfoPixel = document.querySelector("#info-pixel");
+const btnInfoPortfolio = document.querySelector("#info-portfolio");
+
+//modal
+const modal = document.querySelector("#modal-blog-info");
+const modalOverlay = document.querySelector("#modal-overlay");
+const modalContent = document.querySelector("#modal-content");
+const modalBtnClose = document.querySelector("#modal-btn-close");
+
+const hidden = "hidden";
 
 //tecnologies
-const descriptionsTecnologies = document.querySelectorAll(".description-tec"); 
-const descriptionHtml= document.querySelector("#tec-html");
-const buttonHtml= document.querySelector("#btn-tec-html");
-const descriptionCss= document.querySelector("#tec-css");
-const buttonCss= document.querySelector("#btn-tec-css");
-const descriptionSass= document.querySelector("#tec-sass");
-const buttonSass= document.querySelector("#btn-tec-sass");
-const descriptionJs= document.querySelector("#tec-js");
-const buttonJs= document.querySelector("#btn-tec-js");
-const descriptionPython= document.querySelector("#tec-python");
-const buttonPython= document.querySelector("#btn-tec-python");
-const descriptionDjango= document.querySelector("#tec-django");
-const buttonDjango= document.querySelector("#btn-tec-django");
-const descriptionMysql= document.querySelector("#tec-mysql");
-const buttonMysql= document.querySelector("#btn-tec-mysql");
-const descriptionGit= document.querySelector("#tec-git");
-const buttonGit= document.querySelector("#btn-tec-git");
-const descriptionGithub= document.querySelector("#tec-github");
-const buttonGithub= document.querySelector("#btn-tec-github");
+// const descriptionsTecnologies = document.querySelectorAll(".description-tec"); 
+// const descriptionHtml= document.querySelector("#tec-html");
+// const buttonHtml= document.querySelector("#btn-tec-html");
+// const descriptionCss= document.querySelector("#tec-css");
+// const buttonCss= document.querySelector("#btn-tec-css");
+// const descriptionSass= document.querySelector("#tec-sass");
+// const buttonSass= document.querySelector("#btn-tec-sass");
+// const descriptionJs= document.querySelector("#tec-js");
+// const buttonJs= document.querySelector("#btn-tec-js");
+// const descriptionPython= document.querySelector("#tec-python");
+// const buttonPython= document.querySelector("#btn-tec-python");
+// const descriptionDjango= document.querySelector("#tec-django");
+// const buttonDjango= document.querySelector("#btn-tec-django");
+// const descriptionMysql= document.querySelector("#tec-mysql");
+// const buttonMysql= document.querySelector("#btn-tec-mysql");
+// const descriptionGit= document.querySelector("#tec-git");
+// const buttonGit= document.querySelector("#btn-tec-git");
+// const descriptionGithub= document.querySelector("#tec-github");
+// const buttonGithub= document.querySelector("#btn-tec-github");
 
 //Footer
 const btnLib = document.querySelector("#btn-lib");
 const containerLib = document.querySelector("#container-lib");
 // Variables
 
-let conjuntoTec=[
-    [buttonHtml,
-    descriptionHtml],
-    [buttonCss,
-    descriptionCss],
-    [buttonSass,
-    descriptionSass],
-    [buttonJs,
-    descriptionJs],
-    [buttonPython,
-    descriptionPython],
-    [buttonDjango,
-    descriptionDjango],
-    [buttonMysql,
-    descriptionMysql],
-    [buttonGit,
-    descriptionGit],
-    [buttonGithub,
-    descriptionGithub],
-];
+// let conjuntoTec=[
+//     [buttonHtml,
+//     descriptionHtml],
+//     [buttonCss,
+//     descriptionCss],
+//     [buttonSass,
+//     descriptionSass],
+//     [buttonJs,
+//     descriptionJs],
+//     [buttonPython,
+//     descriptionPython],
+//     [buttonDjango,
+//     descriptionDjango],
+//     [buttonMysql,
+//     descriptionMysql],
+//     [buttonGit,
+//     descriptionGit],
+//     [buttonGithub,
+//     descriptionGithub],
+// ];
 
 //funciones generales
 
@@ -149,18 +160,40 @@ namesProyects.forEach((nameProyect, i)=>{
     })
 })
 
-// tecnologies
-//recibe un array con arrays de pares boton y parrafo a mostrar)
-function showInfoTec(array){
-    array.forEach((conjunto)=>{
-        conjunto[0].addEventListener('click', ()=>{
-            cleanClass(descriptionsTecnologies, 'visible');
-            conjunto[1].classList.add('visible');
-        })
-    })
+//modal
+function openModal(){
+    modal.classList.remove(hidden);
 }
 
-showInfoTec(conjuntoTec);
+function closeModal(){
+    modal.classList.add(hidden);
+}
+
+btnInfoBlog.addEventListener("click", openModal);
+btnInfoPixel.addEventListener("click", openModal);
+btnInfoPortfolio.addEventListener("click", openModal);
+
+modalBtnClose.addEventListener("click", closeModal);
+modalOverlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function(e){
+    if(e.key==="Escape" && !modal.classList.contains(hidden)){
+        closeModal()
+    }
+})
+
+// tecnologies
+//recibe un array con arrays de pares boton y parrafo a mostrar)
+// function showInfoTec(array){
+//     array.forEach((conjunto)=>{
+//         conjunto[0].addEventListener('click', ()=>{
+//             cleanClass(descriptionsTecnologies, 'visible');
+//             conjunto[1].classList.add('visible');
+//         })
+//     })
+// }
+
+// showInfoTec(conjuntoTec);
 
 // footer
 btnLib.addEventListener('click', ()=>{
