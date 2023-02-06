@@ -1,46 +1,50 @@
-#home-anim{
-    position: fixed;
-    z-index: -1;
-    
-    #home{
-        clip-path: url(#cache);
-    
-        #red {
-        fill: none;
-        opacity: 0.15;
-        stroke: $lightGrey;
-        stroke-width: 12;
-        stroke-miterlimit:10;
-        animation: show 4s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out; 
-        }
+.background{
+    display: none;
+
+    #home-anim{
+        position: fixed;
+        z-index: -1;
         
-        #blue {
-        fill: none;
-        opacity: 0.15;
-        stroke: $darkGrey;
-        stroke-width: 12;
-        stroke-miterlimit:10;
-        animation: show 4s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        }
+        #home{
+            clip-path: url(#cache);
         
-        #light-blue {
-        fill: none;
-        opacity: 0.15;
-        stroke: $equator;
-        stroke-width: 6;
-        stroke-miterlimit:10;
-        stroke-dasharray: 200;
-        stroke-dashoffset: 800;
-        animation: draw 4s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;    
+            #red {
+            fill: none;
+            opacity: 0.15;
+            stroke: $lightGrey;
+            stroke-width: 12;
+            stroke-miterlimit:10;
+            animation: show 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; 
+            }
+            
+            #blue {
+            fill: none;
+            opacity: 0.15;
+            stroke: $darkGrey;
+            stroke-width: 12;
+            stroke-miterlimit:10;
+            animation: show 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            }
+            
+            #light-blue {
+            fill: none;
+            opacity: 0.15;
+            stroke: $equator;
+            stroke-width: 6;
+            stroke-miterlimit:10;
+            stroke-dasharray: 200;
+            stroke-dashoffset: 800;
+            animation: draw 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;    
+            }
         }
     }
 }
@@ -62,4 +66,11 @@ to {
 100% {
     opacity: 0.15;
 }
-    }  
+    }
+
+@media (min-width:992px){
+
+    .background{
+        display: block;
+    }
+}

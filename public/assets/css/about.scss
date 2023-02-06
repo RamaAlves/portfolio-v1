@@ -21,7 +21,7 @@
             }
         }
         .container-subtitle-change{
-            height: 1.5rem;
+            height: 3rem;
             display: block;
             .subtitle-main{
                 display: inline-block;
@@ -49,6 +49,7 @@
             width: 60vw;
             height: 25vh;
             object-fit: cover;
+            opacity: 1;
         }
         .container-description{
             display:flex;
