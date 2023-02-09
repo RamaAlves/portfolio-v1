@@ -2,29 +2,6 @@
   font-family: azonix;
   src: url(../fonts/azonix/Azonix.otf);
 }
-@-webkit-keyframes changeBg {
-  0% {
-    background: #5298fa;
-  }
-  17% {
-    background: #7fd4a5;
-  }
-  33% {
-    background: #dfb85a;
-  }
-  50% {
-    background: #fc8064;
-  }
-  66% {
-    background: #ff4242;
-  }
-  83% {
-    background: #b26df2;
-  }
-  100% {
-    background: #327fea;
-  }
-}
 @keyframes changeBg {
   0% {
     background: #5298fa;
@@ -46,29 +23,6 @@
   }
   100% {
     background: #327fea;
-  }
-}
-@-webkit-keyframes changeColor {
-  0% {
-    color: #5298fa;
-  }
-  17% {
-    color: #7fd4a5;
-  }
-  33% {
-    color: #dfb85a;
-  }
-  50% {
-    color: #fc8064;
-  }
-  66% {
-    color: #ff4242;
-  }
-  83% {
-    color: #b26df2;
-  }
-  100% {
-    color: #327fea;
   }
 }
 @keyframes changeColor {
@@ -94,20 +48,6 @@
     color: #327fea;
   }
 }
-@-webkit-keyframes lines {
-  0% {
-    left: 98vw;
-    opacity: 0;
-  }
-  50% {
-    display: inline-block;
-    opacity: 1;
-  }
-  100% {
-    left: 0%;
-    opacity: 0;
-  }
-}
 @keyframes lines {
   0% {
     left: 98vw;
@@ -122,28 +62,12 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes aparecer {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@-webkit-keyframes desaparecer {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes desaparecer {
@@ -154,28 +78,12 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes agrandar {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 8rem;
-  }
-}
 @keyframes agrandar {
   0% {
     height: 0;
   }
   100% {
     height: 8rem;
-  }
-}
-@-webkit-keyframes achicar {
-  0% {
-    height: 8rem;
-  }
-  100% {
-    height: 0;
   }
 }
 @keyframes achicar {
@@ -255,7 +163,6 @@
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 0 10px;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -267,8 +174,7 @@
   font-weight: 800;
 }
 .header .nav .nav-list .nav-list-item .nav-item-link:hover {
-  -webkit-animation: changeColor 7s infinite alternate linear;
-          animation: changeColor 7s infinite alternate linear;
+  animation: changeColor 7s infinite alternate linear;
   text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.5333333333);
   transition: all 0.5s ease;
 }
@@ -285,12 +191,10 @@
   background: #dedede;
 }
 .header:hover .border {
-  -webkit-animation: changeBg 7s infinite alternate linear;
-          animation: changeBg 7s infinite alternate linear;
+  animation: changeBg 7s infinite alternate linear;
 }
 .header:hover .nav-toggle {
-  -webkit-animation: changeColor 7s infinite alternate linear;
-          animation: changeColor 7s infinite alternate linear;
+  animation: changeColor 7s infinite alternate linear;
 }
 
 @media (min-width: 992px) {
@@ -316,7 +220,6 @@
     left: auto;
     top: auto;
     opacity: 1;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 100%;
@@ -347,14 +250,10 @@
   stroke: #606060;
   stroke-width: 12;
   stroke-miterlimit: 10;
-  -webkit-animation: show 4s;
-          animation: show 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .background #home-anim #home #blue {
   fill: none;
@@ -362,14 +261,10 @@
   stroke: #1a1919;
   stroke-width: 12;
   stroke-miterlimit: 10;
-  -webkit-animation: show 4s;
-          animation: show 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .background #home-anim #home #light-blue {
   fill: none;
@@ -379,36 +274,15 @@
   stroke-miterlimit: 10;
   stroke-dasharray: 200;
   stroke-dashoffset: 800;
-  -webkit-animation: draw 4s;
-          animation: draw 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+  animation: draw 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes show {
-  0% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0.15;
   }
 }
 @keyframes show {
@@ -546,7 +420,7 @@
 .modal .modal-content .conteiner-more-info .slide-tec .container-tecnologies {
   display: flex;
   flex-flow: row nowrap;
-  width: 280%;
+  width: 100%;
   height: 100%;
   justify-content: start;
   align-items: center;
@@ -590,10 +464,6 @@
   }
   .modal .modal-content .conteiner-more-info .slide-tec .container-tecnologies {
     flex-flow: column nowrap;
-    width: 100%;
-    height: 100%;
-    justify-content: start;
-    align-items: center;
   }
 }
 .footer {
@@ -658,8 +528,7 @@
 }
 .footer .container-section .section-contact .librerias .container-librerias {
   padding: 1rem;
-  -webkit-animation: desaparecer 0.5s ease-in forwards, achicar 1s ease-in forwards;
-          animation: desaparecer 0.5s ease-in forwards, achicar 1s ease-in forwards;
+  animation: desaparecer 0.5s ease-in forwards, achicar 1s ease-in forwards;
 }
 .footer .container-section .section-contact .librerias .container-librerias p {
   padding: 0.375rem;
@@ -671,8 +540,7 @@
   cursor: pointer;
 }
 .footer .container-section .section-contact .librerias .expanded {
-  -webkit-animation: aparecer 1s ease-in forwards, agrandar 0.5s ease forwards;
-          animation: aparecer 1s ease-in forwards, agrandar 0.5s ease forwards;
+  animation: aparecer 1s ease-in forwards, agrandar 0.5s ease forwards;
 }
 .footer .container-section .section-contact .copyright p {
   text-align: center;
@@ -715,8 +583,7 @@
   overflow: auto;
 }
 .about .cointainer-dynamic-title .container-title .title-about {
-  -webkit-animation: changeColor 5s infinite alternate linear;
-          animation: changeColor 5s infinite alternate linear;
+  animation: changeColor 5s infinite alternate linear;
   font-size: 2.3rem;
   text-align: left;
   font-weight: 400;
@@ -730,7 +597,6 @@
 .about .cointainer-dynamic-title .container-subtitle-change .subtitle-main {
   display: inline-block;
   min-height: 1.4rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #dedede;
@@ -801,8 +667,7 @@
   background-color: #0b0b0b;
   text-decoration: none;
   filter: drop-shadow(0px 0px 1px #dfb85a);
-  -webkit-animation: changeColor 5s infinite alternate linear;
-          animation: changeColor 5s infinite alternate linear;
+  animation: changeColor 5s infinite alternate linear;
 }
 
 @media (min-width: 992px) {
@@ -911,15 +776,13 @@
 }
 .proyects .carrousel .container-cards .visible {
   display: flex;
-  -webkit-animation: aparecer 0.6s ease-in forwards;
-          animation: aparecer 0.6s ease-in forwards;
+  animation: aparecer 0.6s ease-in forwards;
 }
 .proyects .carrousel .container-cards .visible .info .btn-info:hover, .proyects .carrousel .container-cards .visible .info .btn-info:focus {
   background-color: #0b0b0b;
   text-decoration: none;
   filter: drop-shadow(0px 0px 1px #dfb85a);
-  -webkit-animation: changeColor 5s infinite alternate linear;
-          animation: changeColor 5s infinite alternate linear;
+  animation: changeColor 5s infinite alternate linear;
 }
 .proyects .list-proyects {
   width: 100%;
@@ -1077,8 +940,7 @@
 }
 .tecnologies .container-description-tec .visible {
   display: block;
-  -webkit-animation: aparecer 1s ease-in forwards;
-          animation: aparecer 1s ease-in forwards;
+  animation: aparecer 1s ease-in forwards;
 }
 
 @media (min-width: 992px) {
