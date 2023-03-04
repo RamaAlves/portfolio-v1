@@ -705,14 +705,14 @@
   text-align: center;
   font-size: 1.5rem;
 }
-.proyects .carrousel {
+.proyects .container-proyects .carrousel {
   width: 100%;
   max-width: 120em;
   background-color: #0b0b0b;
   padding: 0.475rem;
   /* filter: drop-shadow(0px 0px 2px #dedede); */
 }
-.proyects .carrousel .container-cards {
+.proyects .container-proyects .carrousel .container-cards {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -720,9 +720,9 @@
   width: 100%;
   gap: 1rem;
   border-radius: 0.475rem;
-  filter: drop-shadow(0px 0px 2px #dedede);
+  /* filter: drop-shadow(0px 0px 2px $white); */
 }
-.proyects .carrousel .container-cards .card-proyect {
+.proyects .container-proyects .carrousel .container-cards .card-proyect {
   display: none;
   opacity: 0;
   width: 100%;
@@ -735,16 +735,16 @@
   align-items: center;
   filter: drop-shadow(0px 0px 2px #dedede);
 }
-.proyects .carrousel .container-cards .card-proyect:hover, .proyects .carrousel .container-cards .card-proyect:focus {
+.proyects .container-proyects .carrousel .container-cards .card-proyect:hover, .proyects .container-proyects .carrousel .container-cards .card-proyect:focus {
   filter: drop-shadow(0px 0px 2px #dfb85a);
 }
-.proyects .carrousel .container-cards .card-proyect .img-proyect {
+.proyects .container-proyects .carrousel .container-cards .card-proyect .img-proyect {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 16/9;
 }
-.proyects .carrousel .container-cards .card-proyect .info {
+.proyects .container-proyects .carrousel .container-cards .card-proyect .info {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -753,11 +753,11 @@
   gap: 4rem;
   padding: 10%;
 }
-.proyects .carrousel .container-cards .card-proyect .info h4 {
+.proyects .container-proyects .carrousel .container-cards .card-proyect .info h4 {
   height: 2rem;
   text-align: center;
 }
-.proyects .carrousel .container-cards .card-proyect .info .btn-info {
+.proyects .container-proyects .carrousel .container-cards .card-proyect .info .btn-info {
   font-family: azonix, sans-serif;
   cursor: pointer;
   text-decoration: none;
@@ -774,50 +774,53 @@
   filter: drop-shadow(0px 0px 1px #dedede);
   transition: background-color 0.2s ease-in, color 0.4s ease-in;
 }
-.proyects .carrousel .container-cards .visible {
+.proyects .container-proyects .carrousel .container-cards .visible {
   display: flex;
   animation: aparecer 0.6s ease-in forwards;
 }
-.proyects .carrousel .container-cards .visible .info .btn-info:hover, .proyects .carrousel .container-cards .visible .info .btn-info:focus {
+.proyects .container-proyects .carrousel .container-cards .visible .info .btn-info:hover, .proyects .container-proyects .carrousel .container-cards .visible .info .btn-info:focus {
   background-color: #0b0b0b;
   text-decoration: none;
   filter: drop-shadow(0px 0px 1px #dfb85a);
   animation: changeColor 5s infinite alternate linear;
 }
-.proyects .list-proyects {
+.proyects .container-proyects .list-proyects {
   width: 100%;
   padding-top: 1rem;
   text-align: center;
   list-style-type: none;
   overflow: auto;
   height: 5rem;
+  border-radius: 0.475rem;
+  /* background-color: $backgroundTransparent; */
 }
-.proyects .list-proyects::-webkit-scrollbar {
+.proyects .container-proyects .list-proyects::-webkit-scrollbar {
   border-radius: 12px;
   border: 2px solid #dedede;
 }
-.proyects .list-proyects::-webkit-scrollbar:horizontal {
+.proyects .container-proyects .list-proyects::-webkit-scrollbar:horizontal {
   height: 8px;
 }
-.proyects .list-proyects::-webkit-scrollbar:vertical {
+.proyects .container-proyects .list-proyects::-webkit-scrollbar:vertical {
   width: 8px;
 }
-.proyects .list-proyects::-webkit-scrollbar-track {
+.proyects .container-proyects .list-proyects::-webkit-scrollbar-track {
   background: transparent;
 }
-.proyects .list-proyects::-webkit-scrollbar-thumb {
+.proyects .container-proyects .list-proyects::-webkit-scrollbar-thumb {
   border-radius: 12px;
   background-color: #dfb85a;
 }
-.proyects .list-proyects .proyect-name {
+.proyects .container-proyects .list-proyects .proyect-name {
   transition: color 0.2s ease-in;
   width: 100%;
   line-height: 1.8;
 }
-.proyects .list-proyects .seleccionado {
+.proyects .container-proyects .list-proyects .seleccionado {
   color: #dfb85a;
+  filter: drop-shadow(0px 0px 2px #dedede);
 }
-.proyects .list-proyects:hover, .proyects .list-proyects:focus {
+.proyects .container-proyects .list-proyects:hover, .proyects .container-proyects .list-proyects:focus {
   cursor: pointer;
 }
 
@@ -826,25 +829,49 @@
     font-size: 2.4rem;
     padding-bottom: 2rem;
   }
-  .proyects .carrousel .container-cards .card-proyect {
+  .proyects .container-proyects {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    align-items: center;
+  }
+  .proyects .container-proyects .carrousel {
+    flex-grow: 2;
+    width: auto;
+    max-width: none;
+  }
+  .proyects .container-proyects .carrousel .container-cards .card-proyect {
     padding: 1.5rem;
     flex-flow: row;
     gap: 5%;
+    height: 560px;
   }
-  .proyects .carrousel .container-cards .card-proyect .img-proyect {
-    width: 50%;
+  .proyects .container-proyects .carrousel .container-cards .card-proyect .img-proyect {
+    width: 70%;
   }
-  .proyects .carrousel .container-cards .card-proyect .info h4 {
+  .proyects .container-proyects .carrousel .container-cards .card-proyect .info {
+    padding: 0;
+  }
+  .proyects .container-proyects .carrousel .container-cards .card-proyect .info h4 {
     font-size: 1.4rem;
   }
-  .proyects .carrousel .container-cards .card-proyect .info .btn-info {
+  .proyects .container-proyects .carrousel .container-cards .card-proyect .info .btn-info {
     font-size: 1.2rem;
   }
-  .proyects .list-proyects {
-    height: 6rem;
+  .proyects .container-proyects .list-proyects {
+    width: auto;
+    height: 560px;
+    flex-grow: 1;
+    flex-basis: 266px;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 2px #dedede;
   }
-  .proyects .list-proyects .proyect-name {
+  .proyects .container-proyects .list-proyects:hover, .proyects .container-proyects .list-proyects:focus {
+    box-shadow: 0px 0px 2px #dfb85a;
+  }
+  .proyects .container-proyects .list-proyects .proyect-name {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 }
 .tecnologies {
